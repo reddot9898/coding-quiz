@@ -1,0 +1,19 @@
+body {
+  padding: 200px;
+  background: linear-gradient(0deg, rgba(19, 41, 61, 1) 0%, rgba(237, 245, 249, 1) 100%);
+
+}
+
+article {
+  display: inline-block;
+  padding: 200px;
+  text-align: center;
+  background: #c07070;
+  color: #fff;
+  border-bottom: 50px #879274;
+
+}
+
+#quiz-container {
+  text-align: center;
+}
