@@ -4,6 +4,21 @@ body {
 
 }
 
+.header {
+
+  font-size: 50px;
+
+}
+
+.choice {
+  font-size: 30px;
+  margin: 2px;
+}
+
+#start {
+  font-size: 20px;
+}
+
 article {
   display: inline-block;
   padding: 200px;
@@ -16,4 +31,10 @@ article {
 
 #quiz-container {
   text-align: center;
+}
+
+
+
+#timer {
+  font-size: 25px;
 }
