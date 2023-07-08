@@ -134,7 +134,7 @@ function displayQuestion() {
 function endQuiz() {
   clearInterval(timerInterval);
   // saving players score 
-  // wanted a box displayed on screen and not a prompt but ran out of time will come bak in the future and make better
+  // wanted a box displayed on screen and not a prompt but ran out of time will come back in the future and make better
   // cannot get initials to print on screen come back if enough time 
   var initials = prompt(" Enter Your Initials Or Name Here ");
 

@@ -9,8 +9,12 @@ This project was built to test my knowledge and skills on Javascript as well as 
 
 ## Usage 
 
-Link to the application 
-<!-- to be added later  -->
 
+Link To The Quiz ! - https://reddot9898.github.io/coding-quiz/
+
+![Javascript-Quiz](https://github.com/reddot9898/horiseon-refactor/assets/122759845/921f161b-3dd2-49ec-b247-9d1474484bd4)
+
+
+## License
 Please refer to the LICENSE in the repo
 
