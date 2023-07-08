@@ -117,7 +117,7 @@ function displayQuestion() {
 function endQuiz() {
   clearInterval(timerInterval);
 
-  // end message with your final scores
+  // end message with your final scores still trying to get the save your scores working
   questionEl.textContent = "Quiz Ended!";
   choicesEl.innerHTML = "";
   var resultEl = document.createElement("p");
