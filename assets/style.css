@@ -5,18 +5,37 @@ body {
 }
 
 .header {
-
+  color: black;
   font-size: 50px;
+  text-decoration: underline;
+}
+
+.questions {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font: bold;
 
 }
 
 .choice {
-  font-size: 30px;
+  background-color: khaki;
+  border-style: solid;
+  border-radius: 20px;
+  font-size: 20px;
   margin: 2px;
+}
+
+.score {
+  font-size: 25px;
+  color: black;
 }
 
 #start {
   font-size: 20px;
+  background-color: khaki;
+  border-style: solid;
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
 
 article {
@@ -36,5 +55,27 @@ article {
 
 
 #timer {
+  font-size: 30px;
+  font: bold;
+  color: black;
+}
+
+
+#initials {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 25px;
+  color: rgb(161, 0, 0);
+
+}
+
+/* tried making a cool border around my final answers but kept having issues with pushing into other areas other
+page for some reason, will work with tutor and try and come up with a solution*/
+
+#score {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: rgb(161, 0, 0);
+  border-radius: 2px;
 }

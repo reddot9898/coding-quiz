@@ -41,10 +41,13 @@ var questions = [
     choices: ["Null and None", "Not a Number", "Newline and Nextline", "No Available Number"],
     answer: 1
   },
-
-
+  // giving me the ability to add css to all my questions
 
 ];
+
+// had to move this outside of my var questions because it was causing my code to count it as a question overall affecting the final score
+question.setAttribute("class", "questions")
+
 
 // event listener to start the quiz
 startButton.addEventListener("click", startQuiz);
@@ -78,6 +81,7 @@ function displayQuestion() {
   for (var i = 0; i < currentQuestion.choices.length; i++) {
     var choice = currentQuestion.choices[i];
     var choiceButton = document.createElement("button");
+    // set attribute is giving me the ability to style my buttons on the html side with css( tutor had to help me big time with this one)
     choiceButton.setAttribute("class", "choice")
     choiceButton.textContent = choice;
 
@@ -116,11 +120,29 @@ function displayQuestion() {
 // ending the quiz here 
 function endQuiz() {
   clearInterval(timerInterval);
+  // saving players score 
+  // wanted a box displayed on screen and not a prompt but ran out of time will come bak in the future and make better
+  // cannot get initials to print on screen come back if enough time 
+  var initials = prompt(" Enter Your Initials Or Name Here ");
+
+  var playerScore = {
+    initials: initials,
+    score: score
+  };
+
+  // printing the user initials and score on page
+  var initialsEl = document.querySelector("#initials");
+  initialsEl.textContent = "Player: " + initials;
+  var scoreEl = document.querySelector("#score");
+  scoreEl.textContent = "Final Score: " + score;
+
 
   // end message with your final scores still trying to get the save your scores working
   questionEl.textContent = "Quiz Ended!";
   choicesEl.innerHTML = "";
   var resultEl = document.createElement("p");
   resultEl.textContent = "Correct: " + score + " | Missed: " + missed;
+  // added the ability to put css on final scores 
+  resultEl.setAttribute("class", "score")
   choicesEl.appendChild(resultEl);
 }
