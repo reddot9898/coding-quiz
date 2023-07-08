@@ -1,3 +1,16 @@
+// need var for current question, score, time, missed questions etc.
+// need questions
+// need answers to those questions 
+// need  event listeners for all buttons on page
+// need a timer 
+// need a way to subtract time from the timer if user answers wrong
+// need to set up if else statements to keep track of right or wrong inputs to questions
+// need to make timer work so it ends quiz if time is up
+// need a way to end quiz
+// once quiz has finished need to display on screen final score 
+// need to be able to save users initials on page
+
+
 var currentQuestionIndex = 0;
 var time = 50;
 var timerInterval;
